@@ -29,10 +29,6 @@ function updateSlide() {
     slider.classList.remove("fade");
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
-
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === currentIndex);
-  });
 }
 
 // Arrows
